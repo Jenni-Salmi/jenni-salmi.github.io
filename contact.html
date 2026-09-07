@@ -21,9 +21,9 @@
           <!-- Nav -->
           <nav id="nav">
             <ul>
-              <li class="current"><a href="index.html">Welcome</a></li>
+              <li><a href="index.html">Welcome</a></li>
               <li><a href="about.html">About</a></li>
-              <li>
+              <li class="current">
                 <a href="published-translations.html">Published Translations</a>
               </li>
               <li><a href="contact.html">Contact</a></li>
@@ -37,41 +37,29 @@
         <div class="container">
           <div id="content">
             <!-- Content -->
-
-            <div class="row">
-              <div class="col-1 col-0-medium text-center"></div>
-
-              <div class="col-5 col-12-medium text-center">
-                <img
-                  class="image fit"
-                  src="https://as1.ftcdn.net/jpg/01/63/11/70/1000_F_163117064_syJkTuCddASYjvl4WqyRmnuy8cDXpoQY.jpg"
-                />
-              </div>
-              <div class="col-5 col-12-medium">
-                <h2>Subheading</h2>
-                <p>
-                  Phasellus quam turpis, feugiat sit amet ornare in, hendrerit
-                  in lectus. Praesent semper mod quis eget mi. Etiam eu ante
-                  risus. Aliquam erat volutpat. Aliquam luctus et mattis lectus
-                  sit amet pulvinar. Nam turpis nisi consequat etiam.
-                </p>
-                <hr />
-                <div class="row">
-                  <h3>Follow Me on Substack</h3>
-                  <img
-                    height="40"
-                    src="images/substack.png"
-                    style="margin-top: 40px; margin-left: 20px; padding: 0"
-                  />
-                </div>
-              </div>
-              <div class="col-1 col-0-medium text-center"></div>
-            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="eb34b609-f96b-4cd5-98cf-1d8891747abb"
+              />
+              <h3>Name:</h3>
+              <input type="text" name="name" required />
+              <h3>Email</h3>
+              <input type="email" name="email" required />
+              <h3>Message</h3>
+              <textarea name="message" required></textarea>
+              <button type="submit">Submit Form</button>
+            </form>
           </div>
         </div>
       </div>
 
-
+      <!-- Footer -->
+      <div id="footer-wrapper">
+        <footer id="footer" class="container"></footer>
+      </div>
+    </div>
 
     <!-- Scripts -->
 

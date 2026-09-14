@@ -1,11 +1,17 @@
-@import url("fontawesome-all.min.css");
-@import url("https://fonts.googleapis.com/css?family=Oleo+Script:400|Open+Sans:300,300italic,600,600italic,800");
-
 /*
 	Verti by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+@font-face {
+  font-family: CreatoDisplayRegular; /* set name */
+  src: url(./../fonts/CreatoDisplay-Regular.otf); /* url of the font */
+}
+@font-face {
+  font-family: CreatoDisplayThin; /* set name */
+  src: url(./../fonts/CreatoDisplay-Thin.otf); /* url of the font */
+}
 
 html,
 body,
@@ -177,12 +183,12 @@ html {
 }
 
 body {
-  background-color: #f7f7f7;
-  height: 100%;
+  background-color: white;
 
-  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.15rem;
+  font-family: CreatoDisplayRegular;
   font-size: 13pt;
-  font-weight: 300;
+
   line-height: 2.25em;
 }
 
@@ -202,9 +208,8 @@ body.is-preload *:after {
 input,
 select,
 textarea {
-  font-family: "Open Sans", sans-serif;
+  font-family: CreatoDisplayRegular;
   font-size: 13pt;
-  color: red;
   font-weight: 300;
   line-height: 2.25em;
 }
@@ -226,6 +231,7 @@ h5,
 h6 {
   color: #444;
   font-weight: 800;
+  font-family: CreatoDisplayThin;
 }
 
 h1 a,
@@ -240,7 +246,6 @@ h6 a {
 }
 h1 {
   font-size: 3.25em;
-  margin: 0 0 1.1em 0;
   line-height: 1em;
 }
 
@@ -252,7 +257,7 @@ h2 {
 
 h3 {
   font-size: 1.35em;
-  margin: 0 0 1em 0;
+  margin: 0.5em;
 }
 
 b,
@@ -299,6 +304,7 @@ ol,
 dl,
 table {
   margin-bottom: 2em;
+  font-family: CreatoDisplayRegular;
 }
 
 /* Container */
@@ -1598,7 +1604,7 @@ form textarea {
   display: block;
   width: 100%;
   border-radius: 8px;
-  border: solid 1px #eee;
+  border: solid 1px black;
 }
 
 form input[type="text"]:focus,
@@ -1738,7 +1744,6 @@ button,
   border: 0;
   cursor: pointer;
   font-size: 1.35em;
-  padding: 0.6em 1.5em;
 }
 
 input[type="button"].icon:before,
@@ -1913,7 +1918,7 @@ ul.menu li:first-child {
   position: relative;
   text-decoration: none;
 }
-
+/*
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -1935,9 +1940,10 @@ ul.menu li:first-child {
   font-weight: 900;
 }
 
+/*
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
-}
+}*/
 
 .icon > .label {
   display: none;
@@ -2003,8 +2009,9 @@ ul.menu li:first-child {
 /* Wrappers */
 
 #header-wrapper {
-  padding: 4.5em 0 3em 0;
-  background-color: lightgrey;
+  /* add color here to change header color*/
+  box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
+  padding: 1.5em;
 }
 
 #features-wrapper {
@@ -2012,7 +2019,7 @@ ul.menu li:first-child {
 }
 
 #main-wrapper {
-  background: #fff;
+  /* add color here to change footer color*/
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.05);
   padding: 5em 0 5em 0;
 }
@@ -2058,6 +2065,7 @@ ul.menu li:first-child {
   right: 0;
   top: 0;
   font-size: 0.9em;
+  font-family: CreatoDisplayThin;
 }
 
 #nav ul {
@@ -2078,8 +2086,8 @@ ul.menu li:first-child {
   -ms-transition: background-color 0.25s ease-in-out;
   transition: background-color 0.25s ease-in-out;
   font-weight: 800;
-  letter-spacing: 0.025em;
-  color: #696969;
+  letter-spacing: 0.15em;
+  color: black;
   text-decoration: none;
   border-radius: 6px;
   padding: 0.5em 1em 0.5em 1em;

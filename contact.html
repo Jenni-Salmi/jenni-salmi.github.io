@@ -23,10 +23,10 @@
             <ul>
               <li><a href="index.html">Welcome</a></li>
               <li><a href="about.html">About</a></li>
-              <li class="current">
+              <li>
                 <a href="published-translations.html">Published Translations</a>
               </li>
-              <li><a href="contact.html">Contact</a></li>
+              <li class="current"><a href="contact.html">Contact</a></li>
             </ul>
           </nav>
         </header>
@@ -37,27 +37,62 @@
         <div class="container">
           <div id="content">
             <!-- Content -->
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input
-                type="hidden"
-                name="access_key"
-                value="eb34b609-f96b-4cd5-98cf-1d8891747abb"
-              />
-              <h3>Name:</h3>
-              <input type="text" name="name" required />
-              <h3>Email</h3>
-              <input type="email" name="email" required />
-              <h3>Message</h3>
-              <textarea name="message" required></textarea>
-              <button type="submit">Submit Form</button>
-            </form>
+
+            <div style="display: flex; flex-direction: row; gap: 50px">
+              <div style="width: 45%; flex-grow: 1">
+                <h2>Contact Me</h2>
+                <p>
+                  Interested in working with me? Please use the contact form
+                  below to share some details about your project.
+                </p>
+              </div>
+
+              <div style="width: 45%; flex-grow: 1">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="5543cbd1-6fbc-424c-ac01-de5d07b4957c"
+                  />
+                  <h3>Name:</h3>
+                  <input type="text" name="name" required />
+                  <h3>Email:</h3>
+                  <input type="email" name="email" required />
+                  <h3>Message:</h3>
+                  <textarea name="message" required></textarea>
+                  <button
+                    style="
+                      margin-top: 1em;
+                      background-color: lightgray;
+                      font-size: smaller;
+                    "
+                    type="submit"
+                  >
+                    <h3>Submit Form</h3>
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Footer -->
       <div id="footer-wrapper">
-        <footer id="footer" class="container"></footer>
+        <footer id="footer" class="container">
+          <div class="row">
+            <div class="col-12">
+              <div id="copyright">
+                <ul class="menu">
+                  <li>&copy; Untitled. All rights reserved</li>
+                  <li>
+                    Design: <a href="https://claremason.net">Clare Mason</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 

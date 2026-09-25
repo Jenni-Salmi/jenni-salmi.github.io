@@ -9,10 +9,26 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body class="is-preload no-sidebar">
+  <body>
     <div id="page-wrapper">
       <!-- Header -->
       <div id="header-wrapper">
+        <!-- Moblie Menu Bar-->
+        <img
+          src="./images/menu.png"
+          id="mobile-menu-btn"
+          style="position: absolute; left: 20px; top: 20px"
+        />
+
+        <div class="mobile-menu" style="display: none">
+          <div><a href="index.html">Home</a></div>
+          <div class="current"><a href="about.html">About</a></div>
+          <div>
+            <a href="published-translations.html">Published Translations</a>
+          </div>
+          <div><a href="contact.html">Contact</a></div>
+        </div>
+        <!-- Desktop Menu Bar-->
         <header id="header" class="container">
           <!-- Logo -->
           <div id="logo">
@@ -21,7 +37,7 @@
           <!-- Nav -->
           <nav id="nav">
             <ul>
-              <li><a href="index.html">Welcome</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li>
                 <a href="published-translations.html">Published Translations</a>

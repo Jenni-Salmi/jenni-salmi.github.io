@@ -25,6 +25,20 @@ header {
   width: 1000px;
 }
 
+/* Moblie Menu */
+#mobile-menu-btn {
+  display: none;
+}
+
+.mobile-menu a {
+  color: inherit;
+  text-decoration: none;
+}
+.mobile-menu {
+  color: black;
+  display: none;
+}
+
 /* Fonts */
 
 h1,
@@ -288,5 +302,17 @@ footer div {
     width: 100%;
     text-align: center;
     font-size: 1.25em !important;
+  }
+  /* Moblie Menu */
+
+  #mobile-menu-btn {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
   }
 }

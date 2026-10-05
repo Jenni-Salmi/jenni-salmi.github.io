@@ -9,11 +9,18 @@
   src: url(./../fonts/CreatoDisplay-Thin.otf); /* url of the font */
 }
 
+:root {
+  --primary: #9fa6dd;
+  --secondary: #505486;
+}
+
 .grid-container div {
   padding: 10px;
   text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+}
+
+.divider {
+  border: 1px solid var(--primary);
 }
 
 body {
@@ -37,7 +44,7 @@ textarea {
 }
 
 a {
-  color: #883689ff;
+  color: var(--secondary);
   text-decoration: underline;
 }
 
@@ -48,4 +55,8 @@ a:hover {
 hr {
   border: 0;
   border-top: solid 1px #eee;
+}
+
+.booktitle {
+  display: none;
 }

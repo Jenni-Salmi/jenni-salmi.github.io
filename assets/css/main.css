@@ -1,3 +1,5 @@
+@import url("firefox.css");
+
 @font-face {
   font-family: CreatoDisplayRegular; /* set name */
   src: url(./../fonts/CreatoDisplay-Regular.otf); /* url of the font */
@@ -28,8 +30,6 @@ header {
 }
 
 #main-wrapper {
-  /* add color here to change footer color*/
-  box-shadow: 0px 3px 0px 0px var(--primary);
   padding: 1em 0 3em 0;
 }
 
@@ -142,7 +142,7 @@ h3 {
 
 form label {
   font-weight: 800;
-  margin: 0 0 1em 0;
+  margin: 0.5em 0 0.5em 0;
   font-size: 1em;
   color: var(--secondary);
 }
@@ -189,6 +189,7 @@ button,
   border: 0;
   cursor: pointer;
   padding: 10px;
+  margin-top: 20px;
 }
 
 /* Nav */

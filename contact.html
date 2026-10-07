@@ -78,15 +78,25 @@
                     name="access_key"
                     value="5543cbd1-6fbc-424c-ac01-de5d07b4957c"
                   />
-                  <h3>Name:</h3>
-                  <input type="text" name="name" required width="inhert" />
-                  <h3>Email:</h3>
-                  <input type="email" name="email" required />
-                  <h3>Message:</h3>
-                  <textarea name="message" required></textarea>
-                  <button style="margin-top: 1em; padding: 10px" type="submit">
-                    Submit Form
-                  </button>
+                  <label>Name</label>
+                  <input
+                    type="text"
+                    name="name"
+                    required
+                    width="inhert"
+                    maxlength="20"
+                  />
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    maxlength="20"
+                    pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                  />
+                  <label>Message</label>
+                  <textarea name="message" required maxlength="200"></textarea>
+                  <button type="submit">Submit Form</button>
                 </form>
               </div>
             </div>

@@ -2,7 +2,7 @@
 
 ## Adding a new entry
 
-In the file `published-translations.html` you can enter new entries in to the grid at line 68 after the common.
+In the file `published-translations.html` you can enter new entries in to the grid at line 68 after the comment.
 
 A new entry looks like:
 
